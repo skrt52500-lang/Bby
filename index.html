@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Suhana Khan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#D4AF37',
+                        roseGold: '#B76E79',
+                        blush: '#FFF0F5'
+                    },
+                    fontFamily: {
+                        script: ['Great Vibes', 'cursive'],
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Poppins', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+        .text-glow {
+            text-shadow: 0 0 10px rgba(255, 107, 129, 0.5);
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-15px) rotate(2deg); }
+        }
+        .floating-panda {
+            animation: float 4s ease-in-out infinite;
+        }
+        @keyframes pulse-glow {
+            0%, 100% { filter: drop-shadow(0 0 5px rgba(212, 175, 55, 0.5)); }
+            50% { filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.9)); }
+        }
+        .gift-box-glow {
+            animation: pulse-glow 3s infinite;
+        }
+        @keyframes spin-slow {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .animate-spin-slow {
+            animation: spin-slow 10s linear infinite;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-rose-100 via-pink-50 to-amber-50 min-h-screen text-stone-800 font-sans pb-20">
+
+    <!-- Navigation Music Player Pill -->
+    <nav class="sticky top-4 z-50 flex justify-center pointer-events-none">
+        <div class="pointer-events-auto glass px-6 py-3 rounded-full shadow-lg border border-rose-300 flex items-center space-x-4 backdrop-blur-md">
+            <div class="relative">
+                <div id="record" class="w-8 h-8 rounded-full bg-stone-900 border-4 border-roseGold flex items-center justify-center animate-spin-slow shadow-md">
+                    <div class="w-3 h-3 rounded-full bg-rose-300"></div>
+                </div>
+            </div>
+            <div>
+                <span id="audio-status" class="text-sm font-semibold text-rose-900 block">Romantic Lullaby</span>
+                <span class="text-xs text-stone-500 block">Tap to play music</span>
+            </div>
+            <button onclick="toggleMusic()" class="bg-rose-500 hover:bg-rose-600 text-white w-10 h-10 rounded-full flex items-center justify-center transition-all shadow hover:scale-105 active:scale-95 font-bold">
+                
+            </button>
+        </div>
+    </nav>
+
+    <div class="relative z-10 max-w-4xl mx-auto px-4 pt-8">
+        
+        <!-- Header -->
+        <header class="text-center mb-16">
+            <span class="text-roseGold text-2xl tracking-widest block mb-2 font-script">✨ Divine Connection ✨</span>
+            <h1 class="text-5xl md:text-7xl font-bold font-serif text-rose-600 text-glow mb-4">Suhana Khan</h1>
+            <div class="flex items-center justify-center space-x-2 text-amber-600 text-xl">
+                <span>✦</span>
+                <span class="font-script text-3xl text-stone-700">Happy Birthday My Queen</span>
+                <span>✦</span>
+            </div>
+        </header>
+
+        <!-- Main Letter Card -->
+        <main class="space-y-8">
+            <div class="glass rounded-3xl p-8 md:p-12 shadow-2xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-rose-200 rounded-bl-full opacity-30 pointer-events-none"></div>
+                <div class="absolute bottom-0 left-0 w-32 h-32 bg-amber-200 rounded-tr-full opacity-30 pointer-events-none"></div>
+                
+                <article class="prose prose-stone max-w-none font-sans leading-relaxed text-stone-700 space-y-6 text-lg">
+                    <div class="text-center pb-6 border-b border-rose-200">
+                        <span class="text-rose-500 text-3xl font-script block mb-2">My Dearest Suhana,</span>
+                        <h2 class="text-3xl font-bold text-rose-900 font-serif">Happy Birthday, My Love!</h2>
+                        <p class="text-roseGold font-medium mt-2">My Favourite Person, My Whole World, My Duniya, My Everything...</p>
+                    </div>
+
+                    <p><strong class="font-semibold text-rose-800">My love, Suhana...</strong> Sometimes, I wish you could see yourself through my eyes, even just for a moment. Maybe then you would understand why you mean so much to me, why your smile brings happiness to my heart, and why your presence makes my whole world feel more beautiful.</p>
+
+                    <blockquote class="border-l-4 border-rose-400 pl-4 italic text-stone-800 my-6 bg-rose-50/50 py-2">
+                        "Suhana, tum sirf meri favourite person nahi ho, tum meri duniya ho, meri khushi ho, mere dil ka sukoon ho. Tum meri zindagi ka woh khoobsurat hissa ho jise main hamesha apne dil ke kareeb rakhna chahta hoon."
+                    </blockquote>
+
+                    <p>You are not just someone I love; you are someone with whom I dream of sharing my happiness, my hopes, my little moments, and my future.</p>
+
+                    <div class="bg-rose-100/50 p-6 rounded-2xl border border-rose-200 my-8">
+                        <h3 class="text-xl font-bold text-rose-900 mb-3 font-serif">A Little Something From My Heart</h3>
+                        <p>Before you came into my life, I never imagined that one person could become so important to me. But then you came, and everything started feeling different. Ordinary moments became special, little things became precious, and my heart found a happiness that words could never fully explain.</p>
+                        <p class="mt-4 font-medium text-rose-900"><em>Pata hai, Suhana? Tum meri zindagi ki sirf ek khoobsurat kahani nahi ho, tum woh kahani ho jise main har din, har pal, aur apni zindagi ke har naye mod par jeena chahta hoon.</em></p>
+                    </div>
+
+                    <p>When I think about happiness, I think about you. When I imagine my future, your presence becomes one of the most beautiful parts of that dream. I don't know what life has planned for us, but I hope we keep creating beautiful memories, supporting each other's dreams, and standing beside each other through life's ups and downs.</p>
+
+                    <div class="text-center py-6">
+                        <span class="text-4xl text-rose-500 font-script block">You are more special than words can explain...</span>
+                    </div>
+
+                    <p>Tumhe shayad kabhi poori tarah ehsaas na ho ki tum mere liye kitni khaas ho. Agar main tumhe apne dil se dekhne ka ek mauka de paata, toh tum samajh paati ki meri muskurahat ke peeche tumhari kitni badi wajah hai. Tumhari chhoti-chhoti baatein, tumhara pyaar, tumhari muskurahat—mere liye sab kuch kitna maayne rakhta hai.</p>
+
+                    <p class="text-xl font-semibold text-rose-900 text-center bg-gradient-to-r from-transparent via-rose-200 to-transparent py-4 my-6">
+                        Suhana, if I could give you one special gift today, it would be the chance to see yourself through my heart. You would understand how precious you are to me.
+                    </p>
+
+                    <h3 class="text-2xl font-bold text-rose-900 font-serif mt-8 mb-4">My Promise and My Wish For Us</h3>
+                    <p>Main shayad hamesha apne dil ki har baat sahi lafzon mein bayaan na kar paaun, lekin meri feelings tumhare liye sachchi hain. Main chahta hoon ki hum ek doosre ko samjhein, ek doosre ki izzat karein, ek doosre ke sapnon ko support karein, aur har mushkil waqt mein ek doosre ka saath dein.</p>
+                    
+                    <p>I know no relationship is perfect, and life won't always be easy. But I hope that whenever things get difficult, we choose understanding over misunderstandings, patience over anger, and honest conversations over silence. Because to me, love is not only about saying "I love you". It's also about showing care, giving respect, keeping trust, and making each other feel valued.</p>
+
+                    <div class="bg-gradient-to-r from-rose-500 to-pink-500 text-white p-8 rounded-3xl shadow-lg my-8 text-center space-y-4">
+                        <span class="text-3xl font-script block">Happy Birthday, My Queen!</span>
+                        <p class="text-lg opacity-90">Aaj tumhara birthday hai, lekin gift mujhe mila hai—tumhari tarah ek khoobsurat insaan ka meri zindagi ka hissa hona. Main sach mein khushnaseeb mehsoos karta hoon ki tum meri life mein ho.</p>
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-rose-900 font-serif mt-8 mb-4">My Special Dua For You, Suhana</h3>
+                    <p>On your birthday, I pray to Allah SWT to always keep you safe, healthy, happy, and protected from every difficulty. May Allah fill your heart with peace, your life with happiness, your days with beautiful moments, and your future with endless blessings.</p>
+
+                    <div class="bg-amber-50 border-r-4 border-amber-400 p-6 rounded-r-2xl my-6 font-medium text-stone-800 space-y-3">
+                        <p><em>Ya Allah, meri Suhana ko hamesha apni hifazat mein rakhna. Uski zindagi ko khushiyon, sukoon, sehat aur barkat se bhar dena. Uski har achhi dua qubool farmana, uske har nek khwab ko poora karna, aur use hamesha sahi raaste par chalne ki hidayat dena.</em></p>
+                        <p class="text-rose-700 font-semibold text-center text-xl pt-2">Aameen, Ya Rabbal Aalameen. 🤲❤️</p>
+                    </div>
+
+                    <div class="border-t border-b border-rose-300 py-8 my-8 text-center space-y-4">
+                        <span class="text-2xl font-script text-roseGold block">A Letter From Your Raihan</span>
+                        <p>Suhana, I may not be able to give you every beautiful thing in this world, but I pray that Allah gives you all the happiness, peace, success, and love your heart deserves. I hope I can always do my part to make you feel respected, appreciated, and loved.</p>
+                        <p class="font-semibold text-stone-900 italic">"Agar mujhe apni zindagi ki sabse khoobsurat cheez chunne ka mauka mile, toh main kisi cheez ka naam nahi loonga—main tumhara naam loonga."</p>
+                    </div>
+
+                    <div class="text-right pt-8 font-script text-3xl text-rose-700 space-y-2">
+                        <p>Forever with love,</p>
+                        <p class="text-4xl font-bold text-rose-950">Your Raihan ❤️</p>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Interactive Gift Section -->
+            <section class="glass rounded-3xl p-8 md:p-12 text-center shadow-2xl relative">
+                <h2 class="text-3xl md:text-4xl font-bold font-serif text-rose-600 mb-6">Your Special Gift</h2>
+                <p class="text-stone-600 mb-8 max-w-xl mx-auto">Click the magical gift box below to reveal a special surprise waiting just for you!</p>
+                
+                <div id="gift-stage" class="min-h-[350px] flex items-center justify-center relative my-6">
+                    <!-- Closed Box -->
+                    <div id="gift-box" onclick="openGift()" class="cursor-pointer transition-transform hover:scale-105 active:scale-95 gift-box-glow">
+                        <div class="w-40 h-40 bg-rose-600 rounded-xl shadow-xl flex flex-col items-center justify-center relative border-4 border-rose-400 mx-auto">
+                            <!-- Ribbon -->
+                            <div class="absolute inset-x-0 top-1/2 -translate-y-1/2 h-8 bg-gold"></div>
+                            <div class="absolute inset-y-0 left-1/2 -translate-x-1/2 w-8 bg-gold"></div>
+                            <!-- Bow -->
+                            <div class="absolute -top-12 left-1/2 -translate-x-1/2 flex">
+                                <div class="w-16 h-12 bg-gold rounded-t-full rounded-bl-full border-2 border-amber-700 rotate-[-15deg] origin-bottom-right"></div>
+                                <div class="w-4 h-10 bg-amber-600 mx-auto self-center -mx-2 z-10"></div>
+                                <div class="w-16 h-12 bg-gold rounded-t-full rounded-br-full border-2 border-amber-700 rotate-[15deg] origin-bottom-left"></div>
+                            </div>
+                            <span class="text-4xl relative z-20"></span>
+                        </div>
+                        <p class="mt-4 font-semibold text-rose-700 animate-pulse">Tap to Open!</p>
+                    </div>
+
+                    <!-- Opened Panda View (Hidden initially) -->
+                    <div id="opened-gift" class="hidden space-y-6 w-full max-w-md">
+                        <div class="relative">
+                            <!-- Animated character container using structured SVG and high-compatibility emojis -->
+                            <div class="text-8xl md:text-9xl floating-panda mx-auto inline-block filter drop-shadow-xl my-4">
+                                
+                            </div>
+                        </div>
+                        <div class="bg-white/90 p-6 rounded-3xl mx-auto shadow-inner border-2 border-rose-300 animate-fade-in relative">
+                            <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-rose-500 to-pink-500 text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow">
+                                Special Delivery
+                            </div>
+                            <span class="text-2xl font-script text-rose-600 block mb-1 pt-2">Surprise!</span>
+                            <h3 class="text-2xl font-bold text-stone-900 mb-2 font-serif">A Little Panda With All My Love</h3>
+                            <p class="text-stone-700 text-base leading-relaxed">Just like this cute panda brings a rose, I offer you my heart, my loyalty, and my unconditional love today and forever.</p>
+                            <button onclick="resetGift()" class="mt-6 px-8 py-3 bg-rose-500 hover:bg-rose-600 text-white rounded-full text-sm font-semibold transition-all shadow-lg hover:scale-105 active:scale-95">
+                                Wrap Box Again 
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="text-center mt-16 text-stone-500 space-y-2">
+            <p>Made with endless love and devotion</p>
+            <p class="font-script text-3xl text-roseGold">Forever Yours, Raihan ❤️</p>
+        </footer>
+    </div>
+
+    <!-- Web Audio API Music Box & Animation Script -->
+    <script>
+        // Falling Rose Petals
+        function createPetal() {
+            const petal = document.createElement('div');
+            petal.innerHTML = '';
+            petal.style.position = 'fixed';
+            petal.style.top = '-20px';
+            petal.style.left = Math.random() * window.innerWidth + 'px';
+            petal.style.fontSize = (Math.random() * 15 + 15) + 'px';
+            petal.style.opacity = Math.random() * 0.7 + 0.3;
+            petal.style.zIndex = '1';
+            
+            const duration = Math.random() * 5 + 5;
+            const delay = Math.random() * 5;
+            const rotation = Math.random() * 360;
+            
+            petal.style.transition = `transform ${duration}s linear, opacity ${duration}s ease-in`;
+            document.body.appendChild(petal);
+
+            setTimeout(() => {
+                petal.style.transform = `translateY(${window.innerHeight + 20}px) translateX(${(Math.random() - 0.5) * 200}px) rotate(${rotation + 360}deg)`;
+                petal.style.opacity = '0';
+            }, 50);
+
+            setTimeout(() => {
+                petal.remove();
+            }, (duration + 1) * 1000);
+        }
+
+        setInterval(createPetal, 400);
+
+        // Gift Opening Logic
+        function openGift() {
+            document.getElementById('gift-box').classList.add('hidden');
+            const opened = document.getElementById('opened-gift');
+            opened.classList.remove('hidden');
+            createConfetti();
+        }
+
+        function resetGift() {
+            document.getElementById('opened-gift').classList.add('hidden');
+            document.getElementById('gift-box').classList.remove('hidden');
+        }
+
+        function createConfetti() {
+            for (let i = 0; i < 60; i++) {
+                const c = document.createElement('div');
+                c.style.position = 'fixed';
+                c.style.left = '50%';
+                c.style.top = '65%';
+                c.style.width = '12px';
+                c.style.height = '12px';
+                c.style.backgroundColor = ['#ff4757', '#ffa502', '#2ed573', '#1e90ff', '#e84393', '#d4af37'][Math.floor(Math.random() * 6)];
+                c.style.borderRadius = '50%';
+                c.style.zIndex = '100';
+                
+                const angle = Math.random() * Math.PI * 2;
+                const velocity = Math.random() * 18 + 8;
+                const vx = Math.cos(angle) * velocity;
+                const vy = Math.sin(angle) * velocity;
+                
+                document.body.appendChild(c);
+                
+                let t = 0;
+                const interval = setInterval(() => {
+                    t += 0.05;
+                    const x = vx * t * 15;
+                    const y = (vy * t + 0.5 * 9.8 * t * t) * 15;
+                    c.style.transform = `translate(${x}px, ${y}px)`;
+                    if (t > 2.5) {
+                        clearInterval(interval);
+                        c.remove();
+                    }
+                }, 20);
+            }
+        }
+
+        // Web Audio API Music Box Synth
+        let audioCtx = null;
+        let isPlaying = false;
+        let musicInterval = null;
+
+        // Note frequencies for a romantic lullaby (Twinkle Twinkle / Love theme variation)
+        const notes = [
+            261.63, 261.63, 392.00, 392.00, 440.00, 440.00, 392.00,
+            349.23, 349.23, 329.63, 329.63, 293.66, 293.66, 261.63
+        ];
+        let noteIndex = 0;
+
+        function initAudio() {
+            if (!audioCtx) {
+                audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+            }
+        }
+
+        function playTone(freq) {
+            if (!audioCtx) return;
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+            
+            osc.type = 'sine';
+            osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+            
+            gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
+            gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 1.2);
+            
+            osc.connect(gain);
+            gain.connect(audioCtx.destination);
+            
+            osc.start();
+            osc.stop(audioCtx.currentTime + 1.2);
+        }
+
+        function toggleMusic() {
+            initAudio();
+            const statusText = document.getElementById('audio-status');
+            const record = document.getElementById('record');
+
+            if (isPlaying) {
+                clearInterval(musicInterval);
+                isPlaying = false;
+                statusText.innerText = "Music Paused";
+                record.style.animationPlayState = 'paused';
+            } else {
+                isPlaying = true;
+                statusText.innerText = "Playing Melody...";
+                record.style.animationPlayState = 'running';
+                
+                // Play first note immediately
+                playTone(notes[noteIndex]);
+                noteIndex = (noteIndex + 1) % notes.length;
+
+                musicInterval = setInterval(() => {
+                    playTone(notes[noteIndex]);
+                    noteIndex = (noteIndex + 1) % notes.length;
+                }, 600);
+            }
+        }
+    </script></body>
+</html>
+
